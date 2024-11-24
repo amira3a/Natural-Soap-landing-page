@@ -1,0 +1,242 @@
+/* الأساسيات */
+html{
+  width: 100%;
+  height: 100%;
+}
+body {
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content:center;
+  background-color: #6c7c41; /* زيتي */
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.logo-div{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+header h1 {
+  font-family: 'Amiri', serif;
+  font-size: 3em;
+  margin: 0 0 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+.buttons{
+  margin-top: 40px;
+}
+button {
+  width: 150px;
+  background-color: #fff;
+  color: #6c7c41; /* زيتي */
+  border: 2px solid #6c7c41;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6c7c41;
+  color: white;
+}
+
+.cta-button {
+  background-color: #6c7c41; /* زيتي */
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: #556d31;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 80vh; */
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 40px;
+  animation: fadeIn 2s ease-in-out 1.5s;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.content p {
+  font-family: 'Amiri', serif;
+  font-size: 1.2em;
+  margin: 30px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.order-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f39c12;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.order-button:hover {
+  transform: scale(1.1);
+  background-color: #e67e22;
+}
+
+
+#testimonials {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 15px;
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial span {
+  display: block;
+  font-size: 14px;
+  color: #888;
+}
+
+#countdown {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#timer {
+  font-size: 24px;
+  color: #d9534f; /* لون أحمر */
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #6c7c41;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer a img {
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+footer a img:hover {
+  transform: scale(1.2); /* تكبير الأيقونات عند التمرير */
+}
+/* حاوية الصورة */
+.image-container {
+  position: relative;
+  width: 500px;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* الصورة */
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* النص */
+.image-container .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* تأثير الـ Hover */
+.image-container:hover .image {
+  transform: scale(1.1);
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+
+
+
+
+/* الحركات */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+/* تصميم متجاوب للأجهزة الصغيرة */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* تصغير حجم الخط للهواتف */
+  }
+  
+  header {
+    flex-direction: column; /* جعل العناصر تتكدس عموديًا */
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%; /* جعل الصور تأخذ العرض الكامل */
+  }
+
+  .cta-button {
+    width: 90%; /* تكبير زر واتساب */
+    margin: 10px auto; /* توسيط الزر */
+  }
+
+  footer {
+    text-align: center; /* تحسين المحاذاة */
+  }
+}

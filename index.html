@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صابون طبيعي %100</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> <!-- خط عربي وإنجليزي -->
+  <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+
+  <header>
+    <!-- الهيدر باللغتين -->
+    <div class="header-arabic">
+      <div class="logo-div">
+      <img src="./assets/logo.png" alt="شعار المنتج" style="width: 70px; height:70px;">
+      <h1>صابون طبيعي %100</h1>
+      </div>
+      <div class="image-container">
+        <img src="./assets/pexels-karolina-grabowska-4210340.jpg"  alt="صابون طبيعي" class="image" >
+  <!-- النصوص -->
+  <div class="hover-text" id="hover-text-ar" >صابون مصنوع من زيت الزيتون الطبيعي</div>
+  <!-- <div class="hover-text" id="hover-text-en" >Soap made from natural olive oil</div> -->
+</div>
+
+      
+<div class="buttons">
+      <!-- <button onclick="changeLanguage('arabic')">العربية</button> -->
+      <button onclick="changeLanguage('english')">English</button>
+      </div>
+    </div>
+
+
+    <div class="header-english" >
+      <div class="logo-div">
+      <img src="./assets/logo.png" alt="شعار المنتج" style="width: 70px; height: 70px;">
+      <h1>100% Natural Soap</h1>
+      </div>
+      <div class="image-container">
+        <img src="./assets//pexels-karolina-grabowska-4210340.jpg"  alt="Natural Soap" class="image" >
+  <!-- النصوص -->
+  <!-- <div class="hover-text" id="hover-text-ar" style="display: none;">صابون مصنوع من زيت الزيتون الطبيعي</div> -->
+  <div class="hover-text" id="hover-text-en" >Soap made from natural olive oil</div>
+</div>
+      
+<div class="buttons">
+      <button onclick="changeLanguage('arabic')">العربية</button>
+      <!-- <button onclick="changeLanguage('english')">English</button> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- محتوى الصفحة باللغة العربية -->
+  <div class="content arabic">
+    <h2>نعومة لبشرتك برائحة منعشة</h2>
+    <div class="image-container">
+        <img src="./assets/pexels-karolina-grabowska-4210374.jpg"  alt="صابون طبيعي" class="image" >
+  <!-- النصوص -->
+  <div class="hover-text" id="hover-text-ar" >
+:المكونات <br>
+    زيت الزيتون <br>
+زيت جوز الهند <br>
+العطور الطبيعية <br></div>
+  <div class="hover-text" id="hover-text-en" style="display: none;">Soap made from natural olive oil</div>
+</div>
+    <p>.صابون طبيعي، مكونات عضوية، وسعر خاص لفترة محدودة <br>.استمتع بتجربة فاخرة لبشرتك</p>
+    <a href="https://wa.me/xxxxxxxxx" target="_blank" class="order-button" id="order">
+      <img src="./assets/whatsapp-icon.png" alt="واتساب" style="width: 20px; height: 20px;">
+      اطلب الآن عبر واتساب</a>
+  </div>
+
+  <!-- محتوى الصفحة باللغة الإنجليزية -->
+  <div class="content english" >
+    <h2>Softness for your skin with a refreshing scent</h2>
+    <div class="image-container">
+        <img src="./assets/pexels-karolina-grabowska-4210374.jpg"  alt="Natural Soap" class="image" >
+  <!-- النصوص -->
+  <!-- <div class="hover-text" id="hover-text-ar" style="display: none;">صابون مصنوع من زيت الزيتون الطبيعي</div> -->
+  <div class="hover-text" id="hover-text-en" >
+ingredients: <br>
+    olive oil <br>
+Coconut oil <br>
+Natural Perfumes</div>
+</div>
+    <p>100% natural soap, organic ingredients, and a special price for a limited time. <br>
+       Enjoy a luxurious experience for your skin.</p>
+    <a href="https://wa.me/xxxxxxxxx" target="_blank" class="order-button" id="order">
+      <img src="./assets/whatsapp-icon.png" alt="واتساب" style="width: 20px; height: 20px;">
+      Order via WhatsApp</a>
+  </div>
+
+  <section id="testimonials">
+  <h2 id="testimonials-artitle" >آراء العملاء</h2>
+    <h2 id="testimonials-entitle">Customer Testimonials</h2>
+
+  <div class="testimonial" id="artestimonial" >
+    '"هذا أفضل صابون جربته لبشرتي!" - أحمد من القاهرة' <br> <br>
+    '"رائحة رائعة وترطيب ممتاز، سأطلب مجددًا." - سارة من الإسكندرية'
+  </div>
+  <div class="testimonial" id="entestimonial" >
+    '"This is the best soap I’ve ever used for my skin!" - Ahmed from Cairo' <br> <br>
+    '"Amazing scent and great hydration. I’ll order again!" - Sarah from Alexandria'
+  </div>
+</section>
+
+<section id="countdown">
+  <h2 class="timer-arabic" >:عرض خاص ينتهي خلال</h2>
+  <h2 class="timer-english" >Special Offer Ends In:</h2>
+  <div id="timer" >00:00:00</div>
+</section>
+
+
+
+  <footer>
+    <!-- الفوتر باللغتين -->
+    <div class="footer-arabic">
+      <p>صابون طبيعي - جميع الحقوق محفوظة © 2024</p>
+      <a href="https://facebook.com" target="_blank">
+    <img src="./assets/facebook-icon.png" alt="Facebook" style="width: 20px; height: 20px;">
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="./assets/instagram-icon.png" alt="Instagram" style="width: 20px; height: 20px;">
+  </a>
+    </div>
+    <div class="footer-english" >
+      <p>100% Natural Soap - All rights reserved © 2024</p>
+      <a href="https://facebook.com" target="_blank">
+    <img src="./assets/facebook-icon.png" alt="Facebook" style="width: 20px; height: 20px;">
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="./assets/instagram-icon.png" alt="Instagram" style="width: 20px; height: 20px;">
+  </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
